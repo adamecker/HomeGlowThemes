@@ -1,7 +1,7 @@
 {
-  "manifestVersion": 5,
+  "manifestVersion": 6,
   "id": "starship",
-  "version": "1.4.2",
+  "version": "1.5.0",
   "author": "mrramam",
   "name": "Starship",
   "description": "A 24th-century bridge console: black field, pill controls, curved frame elbows. Outside the viewport, planets, the odd galaxy, passing ships and the occasional drifting alien.",
@@ -653,6 +653,51 @@
         "weight": 0.5
       }
     ],
-    "mix": 0.55
+    "mix": 0.55,
+    "cast": {
+      "pictures": [
+        {
+          "src": "assets/ship-cruiser.svg",
+          "aspect": 2.2
+        },
+        {
+          "src": "assets/ship-shuttle.svg",
+          "aspect": 1.8
+        },
+        {
+          "src": "assets/ship-saucer.svg",
+          "aspect": 2
+        },
+        {
+          "src": "assets/ship-rocket.svg",
+          "aspect": 2.67
+        },
+        {
+          "src": "assets/ship-raptor.svg",
+          "aspect": 1.73
+        }
+      ],
+      "count": [
+        4,
+        6
+      ],
+      "height": [
+        5,
+        9
+      ],
+      "path": "arc",
+      "bend": [
+        10,
+        30
+      ],
+      "span": [
+        10,
+        75
+      ],
+      "seconds": [
+        5,
+        8
+      ]
+    }
   }
 }
