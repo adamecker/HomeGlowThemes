@@ -1,7 +1,7 @@
 {
-  "manifestVersion": 3,
+  "manifestVersion": 6,
   "id": "reef",
-  "version": "1.2.0",
+  "version": "1.3.2",
   "author": "mrramam",
   "name": "Reef",
   "description": "A dive: sunlit shallows in light mode, a night dive in dark. Water gradients, coral and bioluminescent accents, bubble-soft frames.",
@@ -64,8 +64,8 @@
       "--background": "#0a5f8c",
       "--hg-page-image": "linear-gradient(180deg, #c8f4ff 0%, #5fd0e8 35%, #1a8fbf 70%, #0a5f8c 100%)",
       "--surface": "#f2fbfd",
-      "--card-bg": "rgba(225, 248, 255, 0.55)",
-      "--hg-frame-bg": "rgba(225, 248, 255, 0.55)",
+      "--card-bg": "rgba(232, 249, 255, 0.85)",
+      "--hg-frame-bg": "rgba(232, 249, 255, 0.85)",
       "--text": "#06324a",
       "--text-secondary": "#2f6d84",
       "--border": "#b8dde8",
@@ -97,8 +97,8 @@
       "--background": "#010812",
       "--hg-page-image": "linear-gradient(180deg, #0b4a6e 0%, #052a45 35%, #021628 70%, #010812 100%)",
       "--surface": "#04182b",
-      "--card-bg": "rgba(4, 28, 48, 0.6)",
-      "--hg-frame-bg": "rgba(4, 28, 48, 0.6)",
+      "--card-bg": "rgba(2, 12, 22, 0.85)",
+      "--hg-frame-bg": "rgba(2, 12, 22, 0.85)",
       "--text": "#d8f6ff",
       "--text-secondary": "#7fc8dc",
       "--border": "#1d4f6b",
@@ -591,7 +591,50 @@
         "weight": 2
       }
     ],
-    "mix": 0.6
+    "mix": 0.6,
+    "cast": {
+      "pictures": [
+        {
+          "src": "assets/fish-swim.svg",
+          "aspect": 1.67,
+          "height": [
+            4,
+            7
+          ],
+          "tint": {
+            "light": [
+              "#ff7f2a",
+              "#ffd23f",
+              "#3fb8ff",
+              "#ff5d8f"
+            ],
+            "dark": [
+              "#4fe3d6",
+              "#7cf5c6",
+              "#b48cff",
+              "#5fb8ff"
+            ]
+          }
+        }
+      ],
+      "count": [
+        5,
+        8
+      ],
+      "path": "wander",
+      "wander": [
+        3,
+        8
+      ],
+      "span": [
+        15,
+        80
+      ],
+      "seconds": [
+        6,
+        9
+      ]
+    }
   },
   "ornaments": [
     {
