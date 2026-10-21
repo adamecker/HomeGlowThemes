@@ -220,3 +220,9 @@ All are in the themes repository.
   only tokens and two `blobs` layers per mode, a few large slow washes of
   seasonal color under smaller, quicker ones. Each has a light and a dark
   palette, and confetti in the season's colors.
+- **Glass** (`glass/`) is frosted glass over a still scene: one `image`
+  layer per mode, picked from three wallpapers of soft color ribbons, and
+  frames with `--hg-frame-backdrop` blur and saturate, a bright rim (`--hg-frame-shadow`,
+  `--hg-frame-decoration-color`) and a sheen (`--hg-frame-overlay`). The blur
+  is allowed because nothing behind it moves. Card opacity runs it from clear
+  to tinted.
