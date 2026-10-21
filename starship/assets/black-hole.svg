@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0.28" stop-color="#ffb347" stop-opacity="0.35"/>
+      <stop offset="0.5" stop-color="#ff7b2e" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#ff7b2e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="disk" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c2410c" stop-opacity="0"/>
+      <stop offset="0.18" stop-color="#ff7b2e" stop-opacity="0.75"/>
+      <stop offset="0.42" stop-color="#fff3d6"/>
+      <stop offset="0.58" stop-color="#ffd59a"/>
+      <stop offset="0.82" stop-color="#ff7b2e" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#c2410c" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="arc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff3d6"/>
+      <stop offset="0.5" stop-color="#ffb347" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ff7b2e" stop-opacity="0.2"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.6"/></filter>
+    <clipPath id="front"><rect x="0" y="100" width="200" height="100"/></clipPath>
+  </defs>
+  <circle cx="100" cy="100" r="98" fill="url(#glow)"/>
+  <!-- The disk's far side, behind the hole. -->
+  <ellipse cx="100" cy="100" rx="88" ry="17" fill="none" stroke="url(#disk)" stroke-width="9" filter="url(#soft)"/>
+  <!-- The far side again, bent up and over the hole by its gravity. -->
+  <circle cx="100" cy="100" r="38" fill="none" stroke="url(#arc)" stroke-width="7" filter="url(#soft)"/>
+  <circle cx="100" cy="100" r="31.5" fill="none" stroke="#fff3d6" stroke-opacity="0.9" stroke-width="1.6"/>
+  <circle cx="100" cy="100" r="30" fill="#000"/>
+  <!-- The disk's near side, in front of the hole. -->
+  <ellipse cx="100" cy="100" rx="88" ry="17" fill="none" stroke="url(#disk)" stroke-width="9" filter="url(#soft)" clip-path="url(#front)"/>
+</svg>
