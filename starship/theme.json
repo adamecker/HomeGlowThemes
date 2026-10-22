@@ -1,10 +1,10 @@
 {
-  "manifestVersion": 7,
+  "manifestVersion": 9,
   "id": "starship",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "author": "mrramam",
   "name": "Starship",
-  "description": "A 24th-century bridge console: black field, pill controls, curved frame elbows. Outside the viewport, planets, the odd galaxy, passing ships and the occasional drifting alien.",
+  "description": "A 24th-century bridge console: black field, pill controls, curved frame elbows. Outside the viewport, planets, the odd galaxy, passing ships and the occasional drifting alien. Now and then a black hole drifts past, bending the stars behind it.",
   "extends": "classic",
   "modes": [
     "dark"
@@ -554,6 +554,54 @@
         90,
         360
       ]
+    },
+    {
+      "layer": "flyby",
+      "pictures": [
+        {
+          "src": "assets/black-hole.svg",
+          "aspect": 1,
+          "weight": 2
+        },
+        {
+          "src": "assets/black-hole-tilted.svg",
+          "aspect": 1,
+          "weight": 2
+        },
+        {
+          "src": "assets/black-hole-bare.svg",
+          "aspect": 1,
+          "weight": 1
+        }
+      ],
+      "height": [
+        22,
+        32
+      ],
+      "lens": 0.85,
+      "path": "arc",
+      "bend": [
+        4,
+        10
+      ],
+      "seconds": [
+        90,
+        150
+      ],
+      "every": [
+        300,
+        900
+      ],
+      "span": [
+        15,
+        55
+      ],
+      "angle": [
+        0,
+        25
+      ],
+      "begin": "underway",
+      "chance": 0.6
     },
     {
       "layer": "flyby",
